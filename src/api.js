@@ -1,0 +1,1 @@
+export const api = "https://talk-with-me-jlex.onrender.com"

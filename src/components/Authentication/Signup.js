@@ -6,6 +6,8 @@ import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useState } from "react";
 import { useHistory } from "react-router";
+import { api } from "../../api";
+
 
 const Signup = () => {
   const [show, setShow] = useState(false);
@@ -50,16 +52,29 @@ const Signup = () => {
           "Content-type": "application/json",
         },
       };
+
       const { data } = await axios.post(
-        "/api/user",
-        {
-          name,
-          email,
-          password,
-          pic,
-        },
-        config
-      );
+        `${api}/api/user`,
+      {
+      name,
+      email,
+      password,
+      pic,
+    },
+    config
+    );
+
+
+      // const { data } = await axios.post(
+      //   "/api/user",
+      //   {
+      //     name,
+      //     email,
+      //     password,
+      //     pic,
+      //   },
+      //   config
+      // );
       console.log(data);
       toast({
         title: "Registration Successful",

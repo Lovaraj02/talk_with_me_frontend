@@ -54,7 +54,7 @@ const Signup = () => {
       };
 
       const { data } = await axios.post(
-        `${api}/api/user`,
+        `${api}/api/user/signup`,
       {
       name,
       email,

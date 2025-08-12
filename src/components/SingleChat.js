@@ -20,7 +20,7 @@ import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
 
 // Replace this with your live backend URL:
-const ENDPOINT = "https://your-live-backend-url.com"; 
+const ENDPOINT = "https://talk-with-me-jlex.onrender.com"; 
 
 var socket, selectedChatCompare;
 
